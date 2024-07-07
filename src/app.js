@@ -12,7 +12,7 @@ export default async function app(logFormat = "tiny") {
   expressApp.use(cors()); // Enables CORS headers
   expressApp.use(bodyParser.json());
 
-  expressApp.get("/hello", (req, res) => {
+  expressApp.get("/hello", (_req, res) => {
     res.send("Hello world!");
   });
 
