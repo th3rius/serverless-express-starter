@@ -5,7 +5,7 @@ const PORT = Number(process.env.PORT || 4000);
 const HOST = process.env.HOST || "localhost";
 
 async function bootstrap() {
-  const expressApp = await app();
+  const expressApp = await app("dev");
   const server = http.createServer(expressApp);
 
   server.listen(PORT, HOST, () => {
@@ -14,4 +14,4 @@ async function bootstrap() {
   });
 }
 
-bootstrap()
+bootstrap();
