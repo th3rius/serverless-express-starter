@@ -1,7 +1,7 @@
 {
   "main": "src/main",
   "scripts": {
-    "start": "nodemon -x \"ncc run\" -w \"src/\" -e \"js\" ",
+    "start": "nodemon -x \"ncc run\" -w \"src/\" -e \"js\"",
     "build": "ncc build -m src/lambda"
   },
   "dependencies": {
